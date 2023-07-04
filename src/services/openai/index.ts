@@ -5,7 +5,7 @@ const configuration = new Configuration({
 });
 
 const MESSAGE_COMPLEMENT =
-  "formatado com o nome do lugar - Nome: [nome do lugar] - LOC: coordenadas separadas por vírgula";
+  "formatado em json array com o campo name, representando o nome do lugar e a localização. E o campo location sendo um array com as coordenadas";
 
 export class Openai {
   static async listModels() {

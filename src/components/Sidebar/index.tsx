@@ -1,4 +1,4 @@
-import { PropsWithChildren, useState } from "react";
+import { PropsWithChildren } from "react";
 
 interface SideBarProps {
   isOpen: boolean;
@@ -27,12 +27,12 @@ export const SideBar: React.FC<PropsWithChildren<SideBarProps>> = ({
           className="grid fixed top-0 bg-[#F6F9FE] w-3/12 h-full left-0 ease-out delay-150 duration-300 rounded-r-[25px] rounded-bl-[25px]"
           id="aside"
         >
-          <div className="flex justify-around mt-8">
-            <h1 className="text-[#6164E8] font-bold text-[13px] text-center">
-              OPENAI
+          <div className="flex justify-between mt-8">
+            <h1 className="text-[#6164E8] font-bold text-[13px] text-center text-xl ml-5">
+              OpenAI
             </h1>
             <i
-              className="ml-10 hover:text-red-600 hover:cursor-pointer"
+              className="mr-8 hover:text-red-600 hover:cursor-pointer text-xl"
               onClick={() => handleOpen(false)}
             >
               X
